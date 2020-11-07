@@ -1,13 +1,19 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Last successful commit'
+description: 'Get the commit hash of the last successful workflow run on a given branch'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  branch:  # branch to analyze
+    description: 'Branch to get last successful commit from'
     required: true
-    default: 'World'
+    default: 'main'
+  github_token:  # github token to use
+    description: 'Your GitHub access token'
+    required: true
+  workflow_id:  # ID or filename of the workflow
+    description: 'ID or filename of the workflow'
+    required: true
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  commit_hash: # hash of the last successful workflow run
+    description: 'Last successful commit'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
