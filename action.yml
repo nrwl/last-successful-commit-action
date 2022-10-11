@@ -15,5 +15,5 @@ outputs:
   commit_hash: # hash of the last successful workflow run
     description: 'Last successful commit'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
