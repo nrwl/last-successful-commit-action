@@ -1,3 +1,5 @@
+> __Warning__ This action has been deprecated in favor of [Nx-Set-Shas](https://github.com/marketplace/actions/nx-set-shas). You can find more details on functionality and ergonomics on the [official repo](https://github.com/nrwl/nx-set-shas)
+
 # "Last successful commit" action
 
 This action returns the commit hash when a given workflow was last successful.
